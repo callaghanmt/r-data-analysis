@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Download data\ndownload.file(\"https://ndownloader.figshare.com/files/2292169\",\n              \"data/portal_data_joined.csv\")\n\n#Load the data\nsurveys <- read.csv(\"data/portal_data_joined.csv\")\n\n#Examine the first 6 lines\nhead (surveys)\n\n#Look at the structure\nstr (surveys)\n\n#Indexing and subsettings\nsurveys[1, 1]  #First element in first column\nsurveys[1, 6]  #First element in sixth column\nsurveys[1:3, 7]  #First three elements in seventh column\nsurveys[ , 1]    #All the values in the first column\nsurveys[8:11, ] #All the values in rows 8 to 11\n\n#http://pad.software-carpentry.org/2018-06-18-huddersfield\n\nChallenge\n#Create a data.frame (surveys_200) containing only the data in row 200 of the surveys dataset.\nsurveys_200 <- surveys[200, ]\n\n#Notice how nrow() gives you the number of rows in a data.frame\nnrow(surveys)\n\n#Use that number to pull out just that last row in the data frame.\nn_rows <- nrow(surveys)\nsurveys_last <- surveys[n_rows, ]\n\n#Compare that with what you see as the last row using tail() to make sure it’s meeting expectations.\ntail(surveys)\n\n#Use nrow() to extract the row that is in the middle of the data frame. \nmiddle_row <- nrow(surveys)/2\nsurveys_middle <- surveys[middle_row, ]\n\n#Store the content of this row in an object named surveys_middle.\n\n#Combine nrow() with the - notation to reproduce the behavior of head(surveys), keeping \n#just the first through 6th rows of the surveys dataset.\nsurveys_head <- surveys[-(7:n_rows), ]\n\n\n\n\n\n",
+    "created" : 1529403450684.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3673003503",
+    "id" : "26CD5639",
+    "lastKnownWriteTime" : 1529406737,
+    "last_content_update" : 1529406737702,
+    "path" : "~/Desktop/data-analysis/1_starting_with_data.R",
+    "project_path" : "1_starting_with_data.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

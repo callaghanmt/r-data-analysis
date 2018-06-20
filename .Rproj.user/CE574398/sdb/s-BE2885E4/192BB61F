@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Analysing data\n\n#Installing Tidyverse\ninstall.packages(\"tidyverse\")\n\n#Load the library to make available to scripts\nlibrary(\"tidyverse\")\n\n#Load the surveys data using read_csv from readr\nsurveys <- read_csv(\"data/portal_data_joined.csv\")\nstr(surveys)\n",
+    "created" : 1529408666627.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1601425990",
+    "id" : "192BB61F",
+    "lastKnownWriteTime" : 1529411302,
+    "last_content_update" : 1529411302744,
+    "path" : "~/Desktop/data-analysis/3_data_analysis.R",
+    "project_path" : "3_data_analysis.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
